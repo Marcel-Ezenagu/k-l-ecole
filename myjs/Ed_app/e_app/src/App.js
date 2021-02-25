@@ -4,8 +4,10 @@ import Header from './components/Header'
 import 'semantic-ui-css/semantic.min.css'
 import AddressLayer from './components/AddressLayer';
 import Home from './components/Home';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from './components/Footer';
+import Contact from './pages/Contact';
+
 
 function App() {
   return (
@@ -13,12 +15,16 @@ function App() {
       <div className="App">
         <AddressLayer />
         <Header />
-        <Route path='/' component={Home} />
+        <Switch>
+          <Route path='/contact' component={Contact} />
+          
+          <Route path='/' component={Home}  exact/>
+        </Switch>
         <Footer/>
       </div>
 
-    </BrowserRouter>
+    </BrowserRouter> 
      );
-}
+  }
 
 export default App;

@@ -1,33 +1,28 @@
 import React from 'react'
 import {Link } from 'react-router-dom'
 import { Container, Dropdown, Icon, Menu } from 'semantic-ui-react'
+import  logo  from '../images/logo.JPG';
 
 
 export default function Header() {
     return (
         <div className="header">
             
-                <Link to='/'>
-                            <div>
-                    <div >
-                        <Icon color='white' name='graduation cap' size='big' />{' '}
-                        <div className="logo">
-                            <h2>Itire</h2>
-                            <h6>Nursery and Primary School</h6>
-                        </div>
-                    </div>
-                        
-                            </div>    
-                 </Link>    
+            <Link to='/'>
+                <div>
+                    <img className='logo-image' src={logo} alt='logo' />
+                </div>
+            </Link>    
            
-            <div>
+            <div className='menu'>
                 
                 <Dropdown item text='Menu' >
                     <Dropdown.Menu>
                        
-                        <Dropdown.Item as={Link} to='/about'>About Us</Dropdown.Item>
-                        <Dropdown.Item>News</Dropdown.Item>
-                        <Dropdown.Item>Gallery</Dropdown.Item>
+                      <Link to='/a' > <Dropdown.Item >About</Dropdown.Item></Link> 
+                      <Link to='/contact' > <Dropdown.Item >Contact Us</Dropdown.Item></Link>
+                      <Link to='/contact' > <Dropdown.Item>News</Dropdown.Item></Link> 
+                      <Link to='/contact' > <Dropdown.Item>Gallery</Dropdown.Item></Link> 
                     </Dropdown.Menu>
                 </Dropdown>
 

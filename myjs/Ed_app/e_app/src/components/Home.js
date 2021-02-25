@@ -10,17 +10,17 @@ export default function Home() {
     return (
     
     
-             <div className='home'>
+        <div className='home'>
      
         
         
             <img src={homepic}/>
                 <div className='banner'>
-                 <div >
-                    <h3 className='banner-top'>A Great Place for Education </h3>
+                    <div >
+                        <h3 className='banner-top'>A Great Place for Education </h3>
                     </div>
-                <div>
-                    <p>A building with four walls and Tomorrow inside.</p></div>
+                    <div>
+                        <p>A building with four walls and Tomorrow inside.</p></div>
                     
                     
                     <div>
@@ -64,7 +64,7 @@ export default function Home() {
                             <div>
                                 <h4>Apply for Admission</h4>
                                 <p>Committed to the educating and nurturing students towards responsible global citizenship.</p>
-                               <a href='#cont'> <button className="ui tiny green button">Apply for Admission</button></a>
+                               <Link to='/contact'> <button className="ui tiny green button">Apply for Admission</button></Link>
                             </div>
                     </div>
                 

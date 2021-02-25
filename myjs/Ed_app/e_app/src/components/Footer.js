@@ -17,12 +17,12 @@ export default function Footer() {
                     <LocationOnIcon style={{color:"red"}} />
                     <p>No 1 Shofolahan street, Ijeshatedo, Lagos</p>
                 </div>
-                <div>
+                <div id='phone'>
                     <PhoneIcon style={{color:"red"}} />
                     <p>+234-8028292532</p>
 
                 </div>
-                <div>
+                <div id='email'>
                     <EmailIcon  style={{color:"red"}} />
                     <p>test@itireschools.com</p>
                 </div>
