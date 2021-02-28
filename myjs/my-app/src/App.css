@@ -1,0 +1,234 @@
+*{
+    max-width: 100%; 
+}
+body {
+    max-width: 100%;  
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+      
+  
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+.page-content{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper{
+    flex: 1;
+}
+
+/* MenuBar */
+  .logo{
+    max-height: 2rem ;
+    border-radius: 0.5rem;
+  }  
+  
+  .header > h2:hover {
+  
+  opacity:1;
+  transform: 1.2;
+    }
+  
+  
+  .header__nav >h2:hover{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  
+  .header > a{
+    margin-left: 20px;
+    justify-content: center;
+    text-decoration: none ;
+  }
+  
+  .justify-content-end > a{
+    border-top: 0.1857rem solid rgba(255, 255, 255, 0) ;
+  }
+  
+  .justify-content-end > a.active, 
+  .justify-content-end > a.active:focus {
+    border-top: 0.1875rem solid green ;
+  }
+  
+  
+  .justify-content-end > a:hover{ 
+    border-top: 0.1875rem solid green ;
+  }
+  
+
+
+  /* Home */
+.home{
+    position: relative;
+    top: 3.5rem;
+
+}
+
+.main-info{
+    background: url(images/bg1.jpg) content-box;
+    background-size: cover;
+    background-position: center;
+    
+    color: white;
+    
+    height: 100vh;
+}
+
+ .main-info p{
+    font-weight: 500;
+    padding-left: 1rem;
+    
+}
+.main-info h2{
+    
+    padding-top: 13rem;
+    padding-left: 1rem;
+    color:  #da8f03f3;
+} 
+
+.bt-about{
+    margin: 1rem;
+    color: white;
+    font-weight: 600;
+    padding: 0.35rem;
+    background-color: #da8f03f3;
+    border: 0.5rem solid #da8f03f3;
+}
+
+.bt-works{
+    padding: 0.35rem;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    border:  0.5rem solid white;
+}
+
+
+/* services */
+  .services{
+      padding-top: 5.5rem;
+
+  }
+
+  .s-info{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-top: 1rem;
+      flex-wrap: wrap;
+     
+    }
+
+  .s-info img{
+      width: 20vw;
+  }
+
+  .s-info div{
+      text-align: center;
+  }
+
+  /* Projects */
+  .projects{
+
+    height: 100vh;
+      
+    padding-top: 3.5rem;
+    
+    padding-bottom: 3.5rem;
+  }
+
+  .projects h3{
+      
+    padding-top: 1.5rem;
+      text-align: center;
+      font-weight: bold;
+  }
+
+  /* about */
+  .about{
+    background-color: #f88f06e0;
+    height: 100vh ;
+    color: black;
+    text-align: center;
+    padding-top: 2rem;
+    
+  }
+  .about__info {
+      text-align: center;
+  }
+
+  .about__bios{
+    
+  width: 90%;
+  font-weight: 400;
+padding-left: 2rem;
+  margin-left: 0.7rem;
+  text-align: left ;
+  }
+  .about__info img{
+  }
+/* Contact */
+.message{
+    background-color: #f88f06e0;
+
+    margin-top: 6.5rem;
+    min-height: 90vh;
+    padding-top: 3.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 4.4rem !important;
+    }
+    
+    .message form{
+      margin: 1rem 1rem 5rem 1rem ;
+      
+      border: 0.16rem solid ;
+
+    }
+    .form-field{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      max-width: 100vw;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 1rem;
+    }
+    
+    
+    .send-button{
+      width: 'fit-content';
+      padding: 0.3rem;
+      margin-left: 2rem;
+      border: 0.12rem solid rgba(10, 73, 1, 0.856);
+      border-radius: 0.25rem;
+      background:rgba(10, 73, 1, 0.856);
+      color: white;
+      font-weight: 600;
+    }
+    
+    
+  
+/* Footer */
+.footer{
+    position: relative !important;
+    bottom: 0 !important;
+    color: #f88f06e0;
+    background: black;
+    
+  
+  }
+  .text-center{
+    text-align: center;
+  }
