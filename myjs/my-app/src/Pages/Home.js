@@ -13,7 +13,7 @@ function Home() {
                    buildings to our clients.
                 </p>
                    
-            <div>
+                 <div>
                     <a href='#about'>
                         <button className='bt-about'>More About Us</button>
                     </a>

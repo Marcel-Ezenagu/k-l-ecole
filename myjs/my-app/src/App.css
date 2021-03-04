@@ -32,19 +32,7 @@ body {
   .logo{
     max-height: 2rem ;
     border-radius: 0.5rem;
-  }  
-  
-  .header > h2:hover {
-  
-  opacity:1;
-  transform: 1.2;
-    }
-  
-  
-  .header__nav >h2:hover{
-    opacity: 1;
-    transform: scale(1.2);
-  }
+  } 
   
   .header > a{
     margin-left: 20px;
