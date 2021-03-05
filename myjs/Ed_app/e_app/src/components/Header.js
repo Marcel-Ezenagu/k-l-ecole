@@ -10,13 +10,14 @@ export default function Header() {
             
             <Link to='/'>
                 <div>
-                    <img className='logo-image' src={logo} alt='logo' />
+                    {/* <img className='logo-image' src={logo} alt='logo' /> */}
+                    <h3 style={{ color:'rgb(139, 9, 9)', paddingLeft:"1rem", paddingRight:"1rem",}} >KEZZ </h3>
                 </div>
             </Link>    
            
             <div className='menu'>
                 
-                <Dropdown item text='Menu' >
+                <Dropdown item text='MENU' >
                     <Dropdown.Menu>
                        
                       <Link to='/a' > <Dropdown.Item >About</Dropdown.Item></Link> 

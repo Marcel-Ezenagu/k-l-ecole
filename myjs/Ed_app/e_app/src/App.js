@@ -7,19 +7,25 @@ import Home from './components/Home';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
+import Salute from './components/Salute';
 
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <AddressLayer />
+      <div className="app">
+        <div className="wrapper">
+          
+          <AddressLayer />
+          <Salute/>
         <Header />
         <Switch>
           <Route path='/contact' component={Contact} />
           
           <Route path='/' component={Home}  exact/>
-        </Switch>
+          </Switch>
+          
+        </div>
         <Footer/>
       </div>
 

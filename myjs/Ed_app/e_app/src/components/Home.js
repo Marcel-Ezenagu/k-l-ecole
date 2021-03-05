@@ -1,75 +1,47 @@
 import React from 'react'
-import { Grid, Icon } from 'semantic-ui-react'
 
 import homepic from '../images/edu 1.jpg'
-import welcome from '../images/ed 5.jpg'
-
-import { Link } from 'react-router-dom';
+import Features from './Features';
+import Carous from './Carous';
 
 export default function Home() {
     return (
-    
-    
+        
         <div className='home'>
      
-        
-        
-            <img src={homepic}/>
-                <div className='banner'>
-                    <div >
-                        <h3 className='banner-top'>A Great Place for Education </h3>
-                    </div>
-                    <div>
-                        <p>A building with four walls and Tomorrow inside.</p></div>
-                    
-                    
-                    <div>
-                    
-                       <a href='#home'> <button className="ui tiny button">Take a Tour</button></a>
-                    </div>
-               
-                </div>
-            
+            <div className="home-header">
 
-                
-                <div className='home_card' id="home">
-                    <div className='cards'>
-                        <div >
-
+                <img src={homepic}/>
+                    <div className='banner'>
                         <div>
-                                <h5>Skilled Teachers</h5>
-                                {/* <span>Our exquisite fleet of alumni keep our flag flying.</span> */}
-                            </div>
-                            <Icon color='green' circular name='users' />
-                         </div>
-                        <div >
-                            <div>
-                                <h5>Certification</h5>
-                                {/* <span>Our exquisite fleet of alumni keep our flag flying.</span> */}
-                            </div>
-                            <Icon color='green' circular name='graduation' />
-                        </div>
-                        
-                        <div >
-                            <div>
-                                <h5>Library & Store</h5>
-                                {/* <span>Our exquisite fleet of alumni keep our flag flying.</span> */}
-                            </div>
-                            <Icon color='green' circular name='book' />
+                            <h5 className='banner-top'>A World of Limitless Opportunities </h5>
+                            
+                            <p>A building with four walls and Tomorrow inside, making the difference
+                                with the quality of education.
+                            </p>   
                         </div>
                     
+                        
+                        
+                        
+                        
+                        <div style={{paddingTop:"1.5rem"}} >
+                            <a href='#home'> <button className="ui tiny button">Take a Tour</button></a>
                         </div>
-                        <div className='home_welcome'>
-                            <img src={welcome} />
-                            <div>
-                                <h4>Apply for Admission</h4>
-                                <p>Committed to the educating and nurturing students towards responsible global citizenship.</p>
-                               <Link to='/contact'> <button className="ui tiny green button">Apply for Admission</button></Link>
-                            </div>
+                    
                     </div>
-                
-                </div>
             </div>
+        
+            <div className="bot">
+                <Features />   
+                 <Carous/>
+                
+            </div>
+
+                
+                
+                
+        </div>
          
 
         
